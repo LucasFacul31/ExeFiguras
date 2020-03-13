@@ -1,4 +1,4 @@
-package atividade;
+package exe_1;
 
 public class Cubo extends Poligono3d {
 	public Cubo(double base, double altura, double profundidade) {

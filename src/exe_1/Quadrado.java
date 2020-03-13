@@ -2,7 +2,11 @@ package exe_1;
 
 public class Quadrado extends Poligono implements Diagonal {
 
-    @Override
+    public Quadrado(double base) {
+		super(base);
+	}
+
+	@Override
     public double calcPerimetro() {
         return 4 * getBase();
     }

@@ -5,21 +5,21 @@ import java.util.ArrayList;
 public class Geometria {
 	public static void main(String[] args) {
 		ArrayList<Figura> figuras = new ArrayList<Figura>();
-		Circulo c = new Circulo();
+		Circulo c = new Circulo(4);
 		figuras.add(c);
-		Losango l = new Losango();
+		Losango l = new Losango(4);
 		figuras.add(l);
-		Quadrado q = new Quadrado();
+		Quadrado q = new Quadrado(4);
 		figuras.add(q);
-		Retangulo r = new Retangulo();
+		Retangulo r = new Retangulo(4, 4);
 		figuras.add(r);
-		Triangulo t = new Triangulo();
+		Triangulo t = new Triangulo(4, 4);
 		figuras.add(t);
 
 		for (int i = 0; i < figuras.size(); i++) {
 			System.out.println(figuras.get(i).getClass().toString());
-			System.out.println("Ã�rea: " + figuras.get(i).calcArea());
-			System.out.println("PerÃ­metro: " + figuras.get(i).calcPerimetro() + "\n");
+			System.out.println("Área: " + figuras.get(i).calcArea());
+			System.out.println("Perímetro: " + figuras.get(i).calcPerimetro() + "\n");
 		}
 
 		ArrayList<Poligono3d> figuras2 = new ArrayList<Poligono3d>();
@@ -29,7 +29,7 @@ public class Geometria {
 		figuras2.add(cubo);
 		Esfera esfera = new Esfera(3, 4, 4, 3);
 		figuras2.add(esfera);
-		Piramide piramide = new Piramide(8);
+		Piramide piramide = new Piramide(8, 4, 4);
 		figuras2.add(piramide);
 
 		for (int i = 0; i < figuras2.size(); i++) {

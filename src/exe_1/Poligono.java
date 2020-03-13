@@ -1,27 +1,35 @@
 package exe_1;
 
 public abstract class Poligono extends Figura {
-	private double base;
-	private double altura;
 
-    @Override
-    public double calcArea() {
-        return base * altura;
-    }
+	public Poligono(double base, double altura) {
+		super();
+		setBase(base);
+		setAltura(altura);
+	}
 
-    public double getBase() {
-        return base;
-    }
+	public Poligono(double base) {
+		super();
+		setBase(base);
+	}
 
-    public void setBase(double base) {
-        this.base = base;
-    }
+	public double calcArea() {
+		return super.getBase() * super.getAltura();
+	}
 
-    public double getAltura() {
-        return altura;
-    }
+	public double getBase() {
+		return super.getBase();
+	}
 
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
+	public void setBase(double base) {
+		super.setBase(base);
+	}
+
+	public double getAltura() {
+		return super.getAltura();
+	}
+
+	public void setAltura(double altura) {
+		super.setAltura(altura);
+	}
 }

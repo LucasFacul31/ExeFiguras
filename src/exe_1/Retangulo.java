@@ -2,7 +2,11 @@ package exe_1;
 
 public class Retangulo extends Poligono implements Diagonal {
 
-    @Override
+    public Retangulo(double base, double altura) {
+		super(base, altura);
+	}
+
+	@Override
     public double calcArea() {
         return getBase() * getAltura();
     }

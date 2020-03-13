@@ -2,14 +2,18 @@ package exe_1;
 
 public class Triangulo extends Poligono {
 
-    @Override
-    public double calcArea() {
-        return getBase() * getAltura() / 2;
-    }
+	public Triangulo(double base, double altura) {
+		super(base, altura);
+	}
 
-    @Override
-    public double calcPerimetro() {
-        return 3 * getBase();
-    }
+	@Override
+	public double calcArea() {
+		return getBase() * getAltura() / 2;
+	}
+
+	@Override
+	public double calcPerimetro() {
+		return 3 * getBase();
+	}
 
 }

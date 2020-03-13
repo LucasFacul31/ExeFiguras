@@ -10,12 +10,6 @@ public abstract class Poligono3d {
 		this.altura = altura;
 		this.profundidade = profundidade;
 	}
-
-	public Poligono3d() {
-		this.base = 0;
-		this.altura = 0;
-		this.profundidade = 0;
-	}
 	
 	public double getBase() {
 		return base;

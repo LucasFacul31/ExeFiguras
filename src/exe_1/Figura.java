@@ -4,12 +4,6 @@ public abstract class Figura {
 	private double base;
 	private double altura;
 
-	public Figura(double base, double altura) {
-		super();
-		this.base = base;
-		this.altura = altura;
-	}
-
 	public abstract double calcArea();
 
 	public abstract double calcPerimetro();
